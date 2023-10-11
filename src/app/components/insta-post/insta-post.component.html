@@ -1,0 +1,54 @@
+<mat-card class="example-card" *ngFor="let data of postData.results">
+    <mat-card-header>
+        <img mat-card-avatar [src]="data.picture.medium" alt="">
+        <mat-card-title>{{data.name.first}} {{data.name.last}}</mat-card-title>
+        <mat-card-subtitle>{{data.location.city}}</mat-card-subtitle>
+        <button mat-button>
+            <img src="../../assets/icon/option.png" alt="">
+        </button>
+    </mat-card-header>
+    <div class="image">
+        <img mat-card-image *ngIf="data.dob.age > 25 && data.dob.age < 30"
+            src="https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk" alt="">
+        <img mat-card-image *ngIf="data.dob.age > 30 && data.dob.age < 35"
+            src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk" alt="">
+        <img mat-card-image *ngIf="data.dob.age > 35 && data.dob.age < 45"
+            src="https://i.picsum.photos/id/1024/1920/1280.jpg?hmac=-PIpG7j_fRwN8Qtfnsc3M8-kC3yb0XYOBfVzlPSuVII" alt="">
+        <img mat-card-image *ngIf="data.dob.age > 45 && data.dob.age < 50"
+            src="https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY" alt="">
+        <img mat-card-image *ngIf="data.dob.age > 50 && data.dob.age < 60"
+            src="https://i.picsum.photos/id/1044/4032/2268.jpg?hmac=BXmoMkaurlzpTLYQupXLipcmI1sFbgT5sIz98Ob5VZE" alt="">
+        <img mat-card-image *ngIf="data.dob.age > 60 && data.dob.age < 70"
+            src="https://i.picsum.photos/id/1036/4608/3072.jpg?hmac=Tn9CS_V7lFSMMgAI5k1M38Mdj-YEJR9dPJCyeXNpnZc" alt="">
+        <img mat-card-image *ngIf="data.dob.age > 70 && data.dob.age < 80"
+            src="https://i.picsum.photos/id/1035/5854/3903.jpg?hmac=DV0AS2MyjW6ddofvSIU9TVjj1kewfh7J3WEOvflY8TM" alt="">
+        <img mat-card-image *ngIf="data.dob.age > 80"
+            src="https://i.picsum.photos/id/1055/5472/3648.jpg?hmac=1c293cGVlNouNQsjxT8y3nsYO-7qLCaOBEGvih0ibEU" alt="">
+
+    </div>
+    <mat-card-actions>
+        <button class="btn-left" mat-button><img src="../../assets/icon/favourite.png" alt=""></button>
+        <button class="btn-left" mat-button><img src="../../assets/icon/comment.png" alt=""></button>
+        <button class="btn-left" mat-button><img src="../../assets/icon/share.png" alt=""></button>
+        <button class="btn-right" mat-button><img src="../../assets/icon/bookmark.png" alt=""></button>
+    </mat-card-actions>
+    <mat-card-content>
+        <h3 class="post-likes"> 192 likes</h3>
+        <p class="post-description">
+            <span class="post-user">{{data.name.first}} {{data.name.last}} </span>Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Beatae adipisci laborum, aperiam eos neque praesentium quibusdam molestiae
+            modi, exercitationem libero nihil voluptatum. Sunt voluptatum eveniet fugiat quae tenetur officia corporis?
+        </p>
+        <p class="post-comment">View all 38 comments</p>
+        <p class="post-date">10 minutes ago</p>
+    </mat-card-content>
+    <form>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Add a comment..." required>
+            <mat-icon matPrefix>sentiment_very_satisfied</mat-icon>
+            <button type="submit" mat-button matSuffix>
+                <mat-icon>send</mat-icon>
+            </button>
+        </mat-form-field>
+    </form>
+</mat-card>

@@ -1,0 +1,46 @@
+.mat-card {
+    overflow: hidden;
+    position: fixed;
+    width: 20%;
+    padding-left:30px;
+    box-shadow: none;
+    border: none;
+    border-radius: 0%;
+    mat-card-header {
+        padding: 32px 2%;
+        button {
+            position: relative;
+            margin-left: auto;
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+        img {
+            width: 66px;
+            height: 66px;
+        }
+    }
+    mat-card-content {
+        padding: 0px 2%;
+    }
+    .followers {
+        display: flex;
+        padding: 8px 2%;
+        button {
+            position: relative;
+            margin-left: auto;
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+        .example-header-image {
+            background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+            background-size: cover;
+        }
+        .follower-profile {
+            padding: 0 16px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+mat-toolbar {
+  background: #fff;
+  position: fixed;
+  z-index: 1;
+  padding: 16px 20%;
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .search {
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+    text-align: start;
+    border: 1px solid #dbdbdb;
+  }
+  mat-icon {
+    padding: 0px 2%;
+  }
+}
+
+//for the meedia screen
+@media only screen and (max-width: 600px) {
+  mat-toolbar {
+    padding: 15px 5%;
+    .search {
+      display: none;
+    }
+    mat-icon {
+      padding: 0px 5%;
+    }
+  }
+}

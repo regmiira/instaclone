@@ -1,0 +1,67 @@
+.mat-card {
+    padding: 0px;
+    margin: 24px 0px;
+    border: 1px solid #dbdbdb;
+    border-radius: 0%;
+    mat-card-header {
+        padding: 1% 2%;
+        button {
+            position: relative;
+            margin-left: auto;
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+        .example-header-image {
+            background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+            background-size: cover;
+        }
+    }
+    mat-card-content {
+        padding: 0px 2%;
+        font-size: 16px;
+        .post-likes {
+            font-weight: 600;
+            color: #262626;
+        }
+        .post-comment,
+        .post-date {
+            color: #8e8e8e;
+        }
+        .post-description {
+            .post-user {
+                font-weight: 600;
+                color: #262626;
+            }
+        }
+        .post-date {
+            text-transform: uppercase;
+        }
+    }
+    mat-form-field{
+        width: 100%;
+        margin-bottom: -20px;
+        input{
+            padding: 0px 2%;
+        }
+    }
+    .image {
+        width: auto;
+        overflow: hidden;
+    }
+    mat-card-actions {
+        padding: 1% 2%;
+        .btn-right {
+            float: right;
+        }
+        button {
+            min-width: 40px;
+            padding: 0%;
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+}

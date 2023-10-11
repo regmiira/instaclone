@@ -1,0 +1,23 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <img mat-card-avatar src="https://avatars.githubusercontent.com/u/110251041" alt="">
+        <mat-card-title>@IraRegmi</mat-card-title>
+        <mat-card-subtitle>Ira Regmi</mat-card-subtitle>
+        <!-- <button mat-button>
+            Switch
+        </button> -->
+    </mat-card-header>
+    <mat-card-content>
+        <h3 class="post-likes"><span>Suggested for you</span><span style="float: right; padding-right: 10px;">see all</span></h3>
+    </mat-card-content>
+    <div class="followers" *ngFor="let user of UserData.results">
+        <img mat-card-avatar [src]="user.picture.medium" alt="">
+        <div class="follower-profile">
+            <mat-card-title>{{user.name.first}} {{user.name.last}}</mat-card-title>
+            <mat-card-subtitle>Suggested for you</mat-card-subtitle>
+        </div>
+        <button mat-button>
+            follow
+        </button>
+    </div>
+</mat-card>
